@@ -1,0 +1,84 @@
+
+body {
+    background-color: rgb(53, 54, 50);
+    color: rgb(117, 165, 255);
+}
+.tile{
+    width: 49%;
+    min-width: 200px;
+    min-height: 200px;
+    width: 400px;
+    height: 400px;
+    border-style: solid;
+    border-width: 5px;
+
+}
+header {
+    text-align: center;
+    width: 100%;
+}
+
+#feedbackField{
+    width: 100%;
+    text-align: center;
+}
+
+#gametiles {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+#red-tile{
+    background-color: red;
+}
+
+#blue-tile{
+    background-color: blue;
+}
+
+#green-tile{
+    background-color: green;
+}
+
+#yellow-tile{
+    background-color: yellow;
+}
+
+.overlay {
+    position: absolute;
+    display: block;
+    height: 100%;
+    background-color: rgba(72, 80, 75, 0.856);
+    color: greenyellow;
+    font-size: 4em;
+    text-align: center;
+    width: 100%;
+}
+
+.overlay div {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: rgb(56, 101, 139);
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
+
+.active{
+    border-color: rgb(235, 177, 70);
+}
+
+.tile:active {
+    border-color: rgb(235, 177, 70);
+}

@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Simon Game</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="./js/main.js" defer>console.log("By Geir Hilmersen");</script>
+</head>
+<body>
+    <header>
+        <h1>The Simon Game</h1>
+        <h3>Test your memory...</h3>
+    </header>
+    <section id="feedbackField">
+        <i>Start the game by left-clicking in the game area!</i>
+    </section>
+
+    <!-- Flex layout med to kolonner, men kanskje grid er bedre til dette?-->
+    <section id="gametiles">
+        <div class="overlay" id="startgame">
+            <div class="overlay-text">Click To Play!</div>
+        </div>
+        <div class="row">
+            <div class="tile" id="red-tile"></div>
+            <div class="tile" id="green-tile"></div>
+        </div>
+        <div class="row">
+            <div class="tile" id="blue-tile"></div>
+            <div class="tile" id="yellow-tile"></div>
+        </div>
+    </section>
+</body>
+</html>
